@@ -33,7 +33,7 @@ def show_points_matplt(points,label):
     # plt.close()
 
 if __name__ == '__main__':
-    npz_root = r'/media/admin1/123/EV-UAV-dataset/test/test_021.npz'
+    npz_root = r'/home/yoon/jk/EV-UAV/EV-UAV/dataset/test/test_021.npz'
     events = np.load(npz_root)
     evs_norm = events['evs_norm']
     evs_loc = events['ev_loc']

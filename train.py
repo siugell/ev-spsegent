@@ -13,6 +13,8 @@ import mlflow
 import tqdm
 from utils.eval import evalute
 
+import wandb
+
 def setup(seed):
     seed_n = seed
     print('random seed:' + str(seed_n))
@@ -31,6 +33,15 @@ def setup(seed):
     os.environ['PYTHONHASHSEED'] = str(seed_n)
 
 if __name__ == '__main__':
+    
+    wandb.init(
+    project="ev-uav",
+    name="baseline",
+    config = {
+    "batch_size": cfg.batch_size,
+        "epochs": cfg.epochs
+    }
+    )
 
     seed=37
     setup(seed)
@@ -73,6 +84,11 @@ if __name__ == '__main__':
             preds,voxel = net(x)
 
             loss = stc_criterion(voxel, p2v_map, preds, label)
+            
+            wandb.log({
+                "loss": loss.item(),
+                "epoch": epoch
+            })
 
             optimizer.zero_grad()
             loss.backward()
@@ -85,6 +101,7 @@ if __name__ == '__main__':
                 mlflow.log_metric('loss', loss.item())
                 if loss.item()<best_loss:
                     torch.save(net.state_dict(),cfg.model_save_root+'/best_loss_seed{}.pt'.format(seed))
+                    wandb.save("model.pth")
                     best_loss = loss.item()
             torch.cuda.empty_cache()
 

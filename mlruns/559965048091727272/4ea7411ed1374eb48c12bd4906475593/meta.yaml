@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yoon/jk/EV-UAV/EV-UAV/mlruns/559965048091727272/4ea7411ed1374eb48c12bd4906475593/artifacts
+end_time: 1773379619753
+entry_point_name: ''
+experiment_id: '559965048091727272'
+lifecycle_stage: active
+run_id: 4ea7411ed1374eb48c12bd4906475593
+run_name: train
+run_uuid: 4ea7411ed1374eb48c12bd4906475593
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773379619704
+status: 3
+tags: []
+user_id: yoon

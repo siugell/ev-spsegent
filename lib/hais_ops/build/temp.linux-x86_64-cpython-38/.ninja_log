@@ -1,0 +1,7 @@
+# ninja log v7
+1	17313	1773377596515907806	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/cuda.o	55a61f127371b5e
+1	17936	1773377596515907806	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/hais_ops.o	68ddcbfaa515aaf3
+1	19329	1773377596515907806	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/hais_ops_api.o	ae78e85610df5470
+2	17001	1773377616644033553	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/cuda.o	f2f0a24eb38f3514
+2	17838	1773377616644033553	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/hais_ops.o	f03de179ca33066a
+2	19232	1773377616644033553	/home/yoon/jk/EV-UAV/EV-UAV/lib/hais_ops/build/temp.linux-x86_64-cpython-38/src/hais_ops_api.o	fecb2e4edae69247

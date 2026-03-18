@@ -1,0 +1,88 @@
+{
+    "os": "Linux-5.4.0-81-generic-x86_64-with-glibc2.17",
+    "python": "3.8.20",
+    "heartbeatAt": "2026-03-13T06:58:50.308645",
+    "startedAt": "2026-03-13T06:58:50.235915",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ChenYichen9527/EV-UAV.git",
+        "commit": "555f3d92e1292697abb56eb7afe50e8bb1d6f466"
+    },
+    "email": "chlworud7722@naver.com",
+    "root": "/home/yoon/jk/EV-UAV/EV-UAV",
+    "host": "yoon-X10SAE",
+    "username": "yoon",
+    "executable": "/home/yoon/anaconda3/envs/evuav/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2011.0895,
+        "min": 800.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1921.571,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2039.862,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1980.787,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1984.088,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2091.667,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1988.845,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2096.427,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1985.469,
+            "min": 800.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.8896636962891,
+            "used": 848.5352325439453
+        }
+    },
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 23.412105560302734
+    }
+}

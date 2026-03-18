@@ -1,0 +1,6 @@
+artifact_location: file:///home/yoon/jk/EV-UAV/EV-UAV/mlruns/559965048091727272
+creation_time: 1773379619450
+experiment_id: '559965048091727272'
+last_update_time: 1773379619450
+lifecycle_stage: active
+name: train

@@ -7,20 +7,20 @@ STRUCTURE:
 
 DATA:
   input_channel: 4
-  root: /media/admin1/123/EV-UAV
-  whole_t: 8000 #ms
+  root: /home/yoon/jk/EV-UAV/EV-UAV/dataset
+  whole_t: 4000 #ms 8000 -> 4000
   res: [346,260]
 
 TRAIN:
   epochs: 50
   batch_size: 1
-  train_workers: 8
+  train_workers: 2 # 8->2
   optim: Adam # Adam or SGD
   lr: 0.001
   k: 3
   t: 5
-  max_events_num : 700000
-  model_save_root:  /media/admin1/123/ev-spsegnet_github/log/model
+  max_events_num : 200000 # 700000->200000
+  model_save_root:  /home/yoon/jk/EV-UAV/EV-UAV/save_model
 
 TEST:
   vis: False
@@ -29,7 +29,7 @@ TEST:
   pd_detT: 50
   correct_thresh: 0.0001
   save: True
-  model_path: /media/admin1/123/ev-spsegnet_github/log/model/best_iou_seed37.pt
+  model_path: /home/yoon/jk/EV-UAV/EV-UAV/save_model/best_iou.pt
 
 
 
