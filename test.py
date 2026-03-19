@@ -4,12 +4,18 @@ from dataset.ev_uav import EvUAV
 from model.evspsegnet import evspsegnet
 from utils.eval import evalute
 import tqdm
+import wandb
 
 if __name__ == '__main__':
     device = "cuda:0"
 
     net = evspsegnet(cfg).eval()
     net.cuda()
+    
+    wandb.init(
+        project="ev-uav",
+        name="baseline_test"
+    )
 
     dataset = EvUAV(cfg, mode='test')
 
@@ -51,6 +57,14 @@ if __name__ == '__main__':
             pd, fa= evaluter.cal_roc()
         print('iou:{},seg_acc:{},pd:{},fa:{}'.format(iou,seg_acc,pd,fa))
 
+        wandb.log({
+            "IoU": iou,
+            "Seg_Acc": seg_acc,
+            "Pd": pd,
+            "FA": fa
+        })
+    
+    wandb.finish()
 
 
 
